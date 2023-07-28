@@ -1,5 +1,6 @@
 import "./App.css";
-import CardMui from "./components/CardMui";
+import AccordionMui from "./components/AccordionMui";
+// import CardMui from "./components/CardMui";
 // import AutoCompleteMui from "./components/AutoCompleteMui";
 // import LayoutMui from "./components/LayoutMui";
 // import RatingMui from "./components/RatingMui";
@@ -24,7 +25,8 @@ function App() {
       {/* <RatingMui /> */}
       {/* <AutoCompleteMui /> */}
       {/* <LayoutMui /> */}
-      <CardMui />
+      {/* <CardMui /> */}
+      <AccordionMui />
     </div>
   );
 }
