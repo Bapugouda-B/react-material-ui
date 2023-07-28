@@ -1,5 +1,6 @@
 import "./App.css";
-import ImageListMui from "./components/ImageListMui";
+import NavbarMui from "./components/NavbarMui";
+// import ImageListMui from "./components/ImageListMui";
 // import AccordionMui from "./components/AccordionMui";
 // import CardMui from "./components/CardMui";
 // import AutoCompleteMui from "./components/AutoCompleteMui";
@@ -28,7 +29,8 @@ function App() {
       {/* <LayoutMui /> */}
       {/* <CardMui /> */}
       {/* <AccordionMui /> */}
-      <ImageListMui />
+      {/* <ImageListMui /> */}
+      <NavbarMui />
     </div>
   );
 }
