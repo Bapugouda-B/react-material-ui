@@ -1,5 +1,7 @@
 import "./App.css";
-import AutoCompleteMui from "./components/AutoCompleteMui";
+import CardMui from "./components/CardMui";
+// import AutoCompleteMui from "./components/AutoCompleteMui";
+// import LayoutMui from "./components/LayoutMui";
 // import RatingMui from "./components/RatingMui";
 // import CheckBoxMui from "./components/CheckBoxMui";
 // import SwitchMui from "./components/SwitchMui";
@@ -20,7 +22,9 @@ function App() {
       {/* <CheckBoxMui /> */}
       {/* <SwitchMui /> */}
       {/* <RatingMui /> */}
-      <AutoCompleteMui />
+      {/* <AutoCompleteMui /> */}
+      {/* <LayoutMui /> */}
+      <CardMui />
     </div>
   );
 }
