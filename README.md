@@ -38,7 +38,7 @@ import ExpandMoreIcon from "@mui/icons-material/ExpandMore";
 #### Start the development server by running the following command in the terminal
 
 ```bash
-cd <project-root-directory->
+cd <project-root-directory>
 ```
 ```bash
 npm start
