@@ -1,4 +1,7 @@
 import "./App.css";
+import BreadcrumbsMui from "./components/BreadcrumbsMui";
+import DrawerMui from "./components/DrawerMui";
+// import LinkMui from "./components/LinkMui";
 import NavbarMui from "./components/NavbarMui";
 // import ImageListMui from "./components/ImageListMui";
 // import AccordionMui from "./components/AccordionMui";
@@ -31,6 +34,9 @@ function App() {
       {/* <AccordionMui /> */}
       {/* <ImageListMui /> */}
       <NavbarMui />
+      {/* <LinkMui /> */}
+      <BreadcrumbsMui />
+      <DrawerMui />
     </div>
   );
 }
