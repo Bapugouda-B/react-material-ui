@@ -1,8 +1,13 @@
 import "./App.css";
+import BottomNavigationMui from "./components/BottomNavigationMui";
 import BreadcrumbsMui from "./components/BreadcrumbsMui";
 import DrawerMui from "./components/DrawerMui";
 // import LinkMui from "./components/LinkMui";
 import NavbarMui from "./components/NavbarMui";
+import SpeedDialMui from "./components/SpeedDialMui";
+import AvatarMui from "./components/displaycomponent/AvatarMui";
+import BadgeMui from "./components/displaycomponent/BadgeMui";
+import ListMui from "./components/displaycomponent/ListMui";
 // import ImageListMui from "./components/ImageListMui";
 // import AccordionMui from "./components/AccordionMui";
 // import CardMui from "./components/CardMui";
@@ -37,6 +42,11 @@ function App() {
       {/* <LinkMui /> */}
       <BreadcrumbsMui />
       <DrawerMui />
+      <SpeedDialMui />
+      {/* <BottomNavigationMui /> */}
+      <AvatarMui />
+      {/* <BadgeMui /> */}
+      <ListMui />
     </div>
   );
 }
