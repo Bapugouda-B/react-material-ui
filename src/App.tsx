@@ -9,6 +9,9 @@ import AvatarMui from "./components/displaycomponent/AvatarMui";
 import BadgeMui from "./components/displaycomponent/BadgeMui";
 import ChipMui from "./components/displaycomponent/ChipMui";
 import ListMui from "./components/displaycomponent/ListMui";
+import TableMui from "./components/displaycomponent/TableMui";
+import ToolTipMui from "./components/displaycomponent/ToolTipMui";
+import AlertMui from "./components/feedbackcomponent/AlertMui";
 // import ImageListMui from "./components/ImageListMui";
 // import AccordionMui from "./components/AccordionMui";
 // import CardMui from "./components/CardMui";
@@ -49,6 +52,9 @@ function App() {
       <BadgeMui />
       <ListMui />
       <ChipMui />
+      <ToolTipMui />
+      <TableMui />
+      <AlertMui />
     </div>
   );
 }
