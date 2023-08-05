@@ -12,6 +12,9 @@ import ListMui from "./components/displaycomponent/ListMui";
 import TableMui from "./components/displaycomponent/TableMui";
 import ToolTipMui from "./components/displaycomponent/ToolTipMui";
 import AlertMui from "./components/feedbackcomponent/AlertMui";
+import DialogMui from "./components/feedbackcomponent/DialogMui";
+import ProgressMui from "./components/feedbackcomponent/ProgressMui";
+import SkeletonMui from "./components/feedbackcomponent/SkeletonMui";
 import SnackbarMui from "./components/feedbackcomponent/SnackBarMui";
 // import ImageListMui from "./components/ImageListMui";
 // import AccordionMui from "./components/AccordionMui";
@@ -57,6 +60,9 @@ function App() {
       <TableMui />
       <AlertMui />
       <SnackbarMui />
+      <DialogMui />
+      <ProgressMui />
+      <SkeletonMui />
     </div>
   );
 }
