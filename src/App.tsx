@@ -12,6 +12,7 @@ import ListMui from "./components/displaycomponent/ListMui";
 import TableMui from "./components/displaycomponent/TableMui";
 import ToolTipMui from "./components/displaycomponent/ToolTipMui";
 import AlertMui from "./components/feedbackcomponent/AlertMui";
+import SnackbarMui from "./components/feedbackcomponent/SnackBarMui";
 // import ImageListMui from "./components/ImageListMui";
 // import AccordionMui from "./components/AccordionMui";
 // import CardMui from "./components/CardMui";
@@ -45,9 +46,9 @@ function App() {
       <NavbarMui />
       {/* <LinkMui /> */}
       <BreadcrumbsMui />
+      {/* <BottomNavigationMui /> */}
       <DrawerMui />
       <SpeedDialMui />
-      {/* <BottomNavigationMui /> */}
       <AvatarMui />
       <BadgeMui />
       <ListMui />
@@ -55,6 +56,7 @@ function App() {
       <ToolTipMui />
       <TableMui />
       <AlertMui />
+      <SnackbarMui />
     </div>
   );
 }
