@@ -16,9 +16,11 @@ import DialogMui from "./components/feedbackcomponent/DialogMui";
 import ProgressMui from "./components/feedbackcomponent/ProgressMui";
 import SkeletonMui from "./components/feedbackcomponent/SkeletonMui";
 import SnackbarMui from "./components/feedbackcomponent/SnackBarMui";
-import LoadingButtonMui from "./components/materiallap/LoadingButtonMui";
-import DatePickerMui from "./components/DatePickerMui";
-import TimePickerMui from "./components/TimePickerMui";
+import LoadingButtonMui from "./components/materiallab/LoadingButtonMui";
+import DatePickerMui from "./components/materiallab/DatePickerMui";
+import TimePickerMui from "./components/materiallab/TimePickerMui";
+import TabsMui from "./components/materiallab/TabsMui";
+import TimelineMui from "./components/materiallab/TimelineMui";
 // import ImageListMui from "./components/ImageListMui";
 // import AccordionMui from "./components/AccordionMui";
 // import CardMui from "./components/CardMui";
@@ -70,6 +72,8 @@ function App() {
       <LoadingButtonMui />
       <DatePickerMui />
       <TimePickerMui />
+      <TabsMui />
+      <TimelineMui />
     </div>
   );
 }
