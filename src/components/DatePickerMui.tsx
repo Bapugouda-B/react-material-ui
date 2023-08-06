@@ -1,5 +1,5 @@
 import React from "react";
-import { Box, Typography, TextField } from "@mui/material";
+import { Box, Typography, TextField, Stack } from "@mui/material";
 import dayjs from "dayjs";
 import { LocalizationProvider } from "@mui/x-date-pickers/LocalizationProvider";
 import { AdapterDayjs } from "@mui/x-date-pickers/AdapterDayjs";
@@ -16,30 +16,33 @@ const DatePickerMui = () => {
       <Typography variant="h5" color="secondary" align="center" my={2}>
         MUI Date Picker Example
       </Typography>
-      <LocalizationProvider dateAdapter={AdapterDayjs}>
-        <DatePicker
-          label="Select Date"
-          minDate={dayjs("2022-08-22")}
-          value={value}
-          onChange={(newValue) => setValue(newValue)}
-          renderInput={(props: any) => <TextField {...props} />}
-        />
+      <Stack spacing={2} mt={3} direction="row">
+        <LocalizationProvider dateAdapter={AdapterDayjs}>
+          <DatePicker
+            label="Select Date"
+            minDate={dayjs("2022-08-22")}
+            value={value}
+            onChange={(newValue) => setValue(newValue)}
+            renderInput={(props: any) => <TextField {...props} />}
+          />
 
-        <MobileDatePicker
-          label="Mobile Date Picker"
-          value={value}
-          onChange={(newValue: any) => setValue(newValue)}
-          renderInput={(props: any) => <TextField {...props} />}
-        />
-        <DesktopDatePicker
-          label="Desktop Date Picker"
-          openTo="year"
-          views={["month", "year"]}
-          value={value}
-          onChange={(newValue: any) => setValue(newValue)}
-          renderInput={(props: any) => <TextField {...props} />}
-        />
-      </LocalizationProvider>
+          <MobileDatePicker
+            label="Mobile"
+            value={value}
+            onChange={(newValue) => setValue(newValue)}
+            renderInput={(props: any) => <TextField {...props} />}
+          />
+          <DesktopDatePicker
+            label="Desktop"
+            openTo="year"
+            views={["month", "year"]}
+            value={value}
+            onChange={(newValue: any) => setValue(newValue)}
+            renderInput={(props: any) => <TextField {...props} />}
+          />
+        </LocalizationProvider>
+        
+      </Stack>
     </Box>
   );
 };
