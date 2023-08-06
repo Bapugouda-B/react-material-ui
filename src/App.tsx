@@ -21,6 +21,7 @@ import DatePickerMui from "./components/materiallab/DatePickerMui";
 import TimePickerMui from "./components/materiallab/TimePickerMui";
 import TabsMui from "./components/materiallab/TabsMui";
 import TimelineMui from "./components/materiallab/TimelineMui";
+import MasonryMui from "./components/materiallab/MasonryMui";
 // import ImageListMui from "./components/ImageListMui";
 // import AccordionMui from "./components/AccordionMui";
 // import CardMui from "./components/CardMui";
@@ -74,6 +75,7 @@ function App() {
       <TimePickerMui />
       <TabsMui />
       <TimelineMui />
+      <MasonryMui />
     </div>
   );
 }
