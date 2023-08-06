@@ -1,4 +1,6 @@
 import "./App.css";
+import { LocalizationProvider } from '@mui/x-date-pickers/LocalizationProvider';
+import { AdapterDateFns } from '@mui/x-date-pickers/AdapterDateFns';
 // import BottomNavigationMui from "./components/BottomNavigationMui";
 import BreadcrumbsMui from "./components/BreadcrumbsMui";
 import DrawerMui from "./components/DrawerMui";
@@ -16,6 +18,8 @@ import DialogMui from "./components/feedbackcomponent/DialogMui";
 import ProgressMui from "./components/feedbackcomponent/ProgressMui";
 import SkeletonMui from "./components/feedbackcomponent/SkeletonMui";
 import SnackbarMui from "./components/feedbackcomponent/SnackBarMui";
+import LoadingButtonMui from "./components/materiallap/LoadingButtonMui";
+import DatePickerMui from "./components/DatePickerMui";
 // import ImageListMui from "./components/ImageListMui";
 // import AccordionMui from "./components/AccordionMui";
 // import CardMui from "./components/CardMui";
@@ -32,6 +36,8 @@ import SnackbarMui from "./components/feedbackcomponent/SnackBarMui";
 
 function App() {
   return (
+    //initial setup to work with date and time picker in MUI
+    <LocalizationProvider dateAdapter={AdapterDateFns}>
     <div className="App">
       {/* <MuiTypography /> */}
       {/* <ButtonMui /> */}
@@ -63,7 +69,10 @@ function App() {
       <DialogMui />
       <ProgressMui />
       <SkeletonMui />
+      <LoadingButtonMui />
+      <DatePickerMui />
     </div>
+    </LocalizationProvider>
   );
 }
 
