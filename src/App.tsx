@@ -1,4 +1,5 @@
 import "./App.css";
+import { createTheme, colors, ThemeProvider } from "@mui/material";
 // import BottomNavigationMui from "./components/BottomNavigationMui";
 import BreadcrumbsMui from "./components/BreadcrumbsMui";
 import DrawerMui from "./components/DrawerMui";
@@ -22,6 +23,7 @@ import TimePickerMui from "./components/materiallab/TimePickerMui";
 import TabsMui from "./components/materiallab/TabsMui";
 import TimelineMui from "./components/materiallab/TimelineMui";
 import MasonryMui from "./components/materiallab/MasonryMui";
+import ResponsivenessMui from "./components/materiallab/ResponsivenessMui";
 // import ImageListMui from "./components/ImageListMui";
 // import AccordionMui from "./components/AccordionMui";
 // import CardMui from "./components/CardMui";
@@ -36,47 +38,61 @@ import MasonryMui from "./components/materiallab/MasonryMui";
 // import MuiTypography from './components/MuiTypography';
 // import TextFieldMui from './components/TextFieldMui';
 
+// custome theme
+const theme = createTheme({
+  status: {
+    danger: "#e53e3e",
+  },
+  palette: {
+    secondary: {
+      main: colors.orange[500],
+    },
+  },
+});
+
 function App() {
   return (
-    //initial setup to work with date and time picker in MUI
-    <div className="App">
-      {/* <MuiTypography /> */}
-      {/* <ButtonMui /> */}
-      {/* <TextFieldMui /> */}
-      {/* <SelectComponentMui /> */}
-      {/* <RadioButtonMui /> */}
-      {/* <CheckBoxMui /> */}
-      {/* <SwitchMui /> */}
-      {/* <RatingMui /> */}
-      {/* <AutoCompleteMui /> */}
-      {/* <LayoutMui /> */}
-      {/* <CardMui /> */}
-      {/* <AccordionMui /> */}
-      {/* <ImageListMui /> */}
-      <NavbarMui />
-      {/* <LinkMui /> */}
-      <BreadcrumbsMui />
-      {/* <BottomNavigationMui /> */}
-      <DrawerMui />
-      <SpeedDialMui />
-      <AvatarMui />
-      <BadgeMui />
-      <ListMui />
-      <ChipMui />
-      <ToolTipMui />
-      <TableMui />
-      <AlertMui />
-      <SnackbarMui />
-      <DialogMui />
-      <ProgressMui />
-      <SkeletonMui />
-      <LoadingButtonMui />
-      <DatePickerMui />
-      <TimePickerMui />
-      <TabsMui />
-      <TimelineMui />
-      <MasonryMui />
-    </div>
+    <ThemeProvider theme={theme}>
+      <div className="App">
+        {/* <MuiTypography /> */}
+        {/* <ButtonMui /> */}
+        {/* <TextFieldMui /> */}
+        {/* <SelectComponentMui /> */}
+        {/* <RadioButtonMui /> */}
+        {/* <CheckBoxMui /> */}
+        {/* <SwitchMui /> */}
+        {/* <RatingMui /> */}
+        {/* <AutoCompleteMui /> */}
+        {/* <LayoutMui /> */}
+        {/* <CardMui /> */}
+        {/* <AccordionMui /> */}
+        {/* <ImageListMui /> */}
+        <NavbarMui />
+        {/* <LinkMui /> */}
+        <BreadcrumbsMui />
+        {/* <BottomNavigationMui /> */}
+        <DrawerMui />
+        <SpeedDialMui />
+        <AvatarMui />
+        <BadgeMui />
+        <ListMui />
+        <ChipMui />
+        <ToolTipMui />
+        <TableMui />
+        <AlertMui />
+        <SnackbarMui />
+        <DialogMui />
+        <ProgressMui />
+        <SkeletonMui />
+        <LoadingButtonMui />
+        <DatePickerMui />
+        <TimePickerMui />
+        <TabsMui />
+        <TimelineMui />
+        <MasonryMui />
+        <ResponsivenessMui />
+      </div>
+    </ThemeProvider>
   );
 }
 
